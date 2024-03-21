@@ -1,0 +1,907 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    scroll-behavior: smooth;
+}
+
+a {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 14.56px;
+    text-decoration: none;
+    color: inherit;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    color: #1C1B1F;
+    margin: 0;
+
+}
+
+.wrapper {
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 91.9%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header p {
+    font-family: 'Kharkiv Tone', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 20.02px;
+
+}
+
+header p > span {
+    font-family: 'Kharkiv Tone', sans-serif;
+    font-size: 32px;
+    line-height: 29.12px;
+    color: #1C1B1F;
+
+}
+
+.main {
+    width: 91.9%;
+    height: 828px;
+    gap: 40px;
+    margin-left: 0;
+    margin-top: 38px;
+}
+
+.main h1 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 120px;
+    font-weight: 300;
+    line-height: 120px;
+    text-transform: uppercase;
+    letter-spacing: -2.8px;
+
+}
+
+.main h1 > span {
+    color: #F68C00;
+    letter-spacing: -2.8px;
+}
+
+span {
+    color: #F68C00;
+}
+
+.main p {
+    width: 540px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22.4px;
+    margin-top: 34px;
+    margin-bottom: 40px;
+    letter-spacing: -0.3px
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-img {
+    width: 100%;
+}
+
+.main-btn {
+    margin-top: 63px;
+    width: 200px;
+    height: 57px;
+    border-radius: 55px;
+    background: #F68C00;
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+    padding-top: 4.8px;
+    padding-left: 31.5px;
+    cursor: pointer;
+}
+
+.main-btn:hover {
+    background-color: #F68C00;
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.main-btn p {
+    color: #FFFFFF;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15.1px;
+    font-weight: 500;
+    line-height: 21.86px;
+    padding-top: 0.5px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+    font-weight: 700;
+}
+
+.burger_link {
+    padding-left: 3px;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 406px;
+}
+
+.nav-link {
+    margin-left: -2px;
+}
+
+.phone {
+    width: 136px;
+    height: 28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 16px;
+    align-items: center;
+}
+
+.phone > span {
+    background-image: url("../assets/phone-line.svg");
+    width: 24px;
+    height: 24px;
+    background-size: 100%;
+    background-position: center;
+    display: block;
+    align-self: start;
+}
+
+.burger_link,
+.phone {
+    color: #1C1B1F;
+}
+
+.navigation nav ul li a.active {
+    color: #F68C00;
+}
+
+.navigation nav ul li a {
+    color: #1C1B1F;
+}
+
+.about,
+.our-services,
+.our-reviews,
+.our-contacts {
+    width: 91.9%;
+}
+
+.about-us {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 158px;
+    justify-content: space-between;
+    margin-bottom: 157px;
+}
+
+.about-us h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 70px;
+    font-weight: 300;
+    line-height: 72px;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+}
+
+.about-us h2 > span {
+    letter-spacing: -1px;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 652px;
+}
+
+.section-title {
+    width: 652px;
+    height: 332px;
+}
+
+.section-title p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: -3px;
+}
+
+.section-title > .paragraph {
+    margin-top: 10px;
+}
+
+.total {
+    margin-top: 30px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 65px;
+    font-weight: 300;
+    line-height: 64px;
+    margin-left: -1px;
+    letter-spacing: 0.5px;
+}
+
+.counter {
+    display: flex;
+    flex-direction: column;
+}
+
+.years p {
+    margin-left: -4px;
+    margin-top: 4px;
+}
+
+.tot-years {
+    margin-left: -8px;
+}
+
+.count-area {
+    padding-left: 103px;
+}
+
+.area {
+    padding-left: 85px;
+    margin-top: 7px;
+}
+
+.projects p {
+    width: 250px;
+    margin-left: 2px;
+    margin-top: 4px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.total span {
+    font-family: 'Manrope', sans-serif;
+
+}
+
+.image {
+    display: flex;
+    margin-top: 66px;
+}
+
+.review-img {
+    height: 440px;
+    width: 316px;
+    border-radius: 32px;
+    background-size: cover;
+    background-position: center;
+    image-rendering: pixelated;
+}
+
+.reviews_inner img {
+    height: 440px;
+    width: 316px;
+    image-rendering: pixelated;
+}
+
+.reviews_inner {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.arrow {
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    cursor: pointer;
+}
+
+.arrow img {
+    width: 36px;
+    height: 36px;
+}
+
+.review-img {
+    width: 316px;
+    transition: width 0.3s ease;
+}
+
+.reviews_inner::-webkit-scrollbar {
+    height: 4px;
+    border-radius: 12px;
+    background: #f2f2f2;
+    color: #f68c00;
+}
+
+.reviews_inner::-webkit-scrollbar-thumb {
+    background: #f68c00;
+    border-radius: 5px;
+    min-width: 50px;
+    min-height: 50px;
+    cursor: pointer;
+}
+
+.text-content {
+    display: none;
+    transition: all 0.8s ease;
+}
+
+.expanded {
+    display: block;
+    margin-top: 10px;
+}
+
+.transform-wrapper {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.transform {
+    border-top: 1px solid black;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    left: 0;
+    width: 100%;
+    font-family: 'Manrope', sans-serif;
+    font-size: 72px;
+    font-weight: 300;
+    line-height: 100.8px;
+    text-transform: uppercase;
+    gap: 50px;
+    height: 99px;
+}
+
+.transform p {
+    height: 80px;
+    padding-left: 60px;
+}
+
+.reverse {
+    width: 100%;
+    color: #F68C00;
+    border-bottom: 1px solid black;
+    height: 99px;
+}
+
+.transform p {
+    display: inline-block;
+    margin: 0;
+    animation: moveLeft 5s linear infinite;
+}
+
+.transform.reverse p {
+    animation: moveRight 5s linear infinite;
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.work-img {
+    width: 91.9%;
+}
+
+.our-work {
+    font-family: 'Manrope', sans-serif;
+    font-size: 70px;
+    font-weight: 300;
+    line-height: 72px;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    margin-top: 160px;
+}
+
+.about-us span {
+    letter-spacing: 1px;
+    margin-left: 3px;
+}
+
+.services {
+    width: 91.9%;
+    margin-top: 163px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 347px;
+}
+
+.services h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 70px;
+    font-weight: 300;
+    line-height: 72px;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+}
+
+.container {
+    border-top: 1px solid black;
+    margin-top: -3px;
+}
+
+.main-container {
+    width: 652px;
+}
+
+.container-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.container-content p > span {
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+.container p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 36px;
+    paragraph: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.offers {
+    letter-spacing: -1px;
+    width: 501px;
+    padding-left: 28px;
+
+}
+
+.text-content {
+    margin-top: -7px;
+    width: 434px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+
+}
+
+.last-container {
+    border-bottom: 1px solid black;
+}
+
+.toggle-btn {
+    font-family: 'Manrope', sans-serif;
+    font-size: 60px;
+    font-weight: 200;
+    margin-top: 7px;
+    padding-left: 20px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.reviews {
+    width: 91.9%;
+    margin-top: 230px;
+}
+
+.reviews h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 72px;
+    font-weight: 300;
+    line-height: 72px;
+    text-transform: uppercase;
+    letter-spacing: -2.5px;
+}
+
+.reviews h2 > span {
+    letter-spacing: -1.5px;
+}
+
+.reviews-about__us {
+    margin-top: 70px;
+    margin-left: 3px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 448px;
+    gap: 17px;
+    justify-content: center;
+}
+
+.reviews-border {
+    width: 428px;
+    border-radius: 32px;
+    border: 1px solid #C5C5C5;
+    padding: 29px 20px 30px 20px;
+}
+
+.reviews-content {
+    margin-top: 25px;
+    width: 388px;
+    height: 110px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.4px;
+    position: relative;
+}
+
+.hidden-text {
+    display: none;
+}
+
+.reviews-content span {
+    color: #1C1B1F;
+}
+
+.read-more {
+    font-size: 30px;
+    margin-left: 375px;
+    margin-top: -27px;
+    position: absolute;
+    color: black;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.read-txt {
+    margin-left: 260px;
+}
+
+.reviews-author {
+    margin-top: 43px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -1px;
+}
+
+.reviews-users {
+    display: flex;
+    flex-direction: row;
+}
+
+.reviews-data {
+    margin-top: 50px;
+    margin-left: 10px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+}
+
+.information {
+    margin-top: 161px;
+    background-image: url("../assets/img-8.png");
+    width: 91.9%;
+    height: 392px;
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.discuss {
+    font-family: 'Manrope', sans-serif;
+    font-size: 49px;
+    font-weight: 300;
+    line-height: 57.6px;
+    color: #FFFFFF;
+    width: 533px;
+    height: 116px;
+    padding-top: 100px;
+    letter-spacing: -1.8px;
+    margin-left: -15px;
+}
+
+.details {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    color: #FFFFFF;
+    margin-top: 53px;
+    margin-left: -15px;
+    letter-spacing: -0.5px;
+}
+
+.form {
+    margin-top: 83px;
+    display: flex;
+    flex-direction: column;
+    gap: 12.5px;
+    width: 420px;
+    height: 192px;
+}
+
+.form input {
+    background: transparent;
+    border-bottom: 1px solid;
+    color: #FFFFFF;
+    width: 420px;
+    height: 25px;
+    margin-left: 5px;
+}
+
+.form input[type="tel"],
+.form input[type="email"] {
+    color: #FFFFFF;
+    padding-bottom: 2px;
+    padding-left: 3px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    opacity: 70%;
+}
+
+
+.form input[type="tel"]:not(:focus):empty::before,
+.form input[type="email"]:not(:focus):empty::before {
+    content: attr(value);
+    color: #FFFFFF;
+}
+
+.form-btn {
+    width: 420px;
+    height: 85px;
+    gap: 68px;
+    margin-top: 50px;
+    margin-left: 10px;
+    background: #F68C00;
+    color: #FFFFFF;
+    border-radius: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.86px;
+    padding-left: 150px;
+    letter-spacing: -0.5px;
+    cursor: pointer;
+}
+
+.form-btn:hover {
+    background-color: #F68C00;
+    color: white;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+.contacts {
+    width: 1324px;
+    margin-top: 160px;
+    display: flex;
+    flex-direction: row;
+    gap: 130px;
+}
+
+.contacts-wrapper {
+    width: 540px;
+    height: 523px;
+}
+
+.contacts-wrapper h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 72px;
+    font-weight: 300;
+    line-height: 72px;
+    text-transform: uppercase;
+    margin-top: 3px;
+    letter-spacing: -1.3px;
+    margin-bottom: 50px;
+}
+
+.contacts-wrapper h2 > span {
+    letter-spacing: -1.8px;
+}
+
+.city > svg {
+    margin-right: 6px;
+    width: 27px;
+    height: 27px;
+}
+
+.city {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.5px;
+    margin-bottom: 18px;
+}
+
+.adress,
+.hours,
+.contact {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.main-city,
+.schedule,
+.phone-email {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.4px;
+    margin-top: 10px;
+    letter-spacing: -0.7px;
+}
+
+.hours,
+.contact {
+    margin-top: 22px;
+}
+
+.phone-email {
+    letter-spacing: -0.5px;
+}
+
+.footer {
+    width: 91.9%;
+}
+
+.footer-wrapper {
+    margin-top: 157px;
+    width: 1325px;
+    height: 171px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #D9D9D9;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 33px;
+    margin-top: -25px;
+}
+
+.footer-nav > .burger_link {
+    margin-left: 7px;
+
+}
+
+.icon {
+    margin-left: 207px;
+    margin-top: -17px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.privacy {
+    width: 1324px;
+    height: 21px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.privacy p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #C5C5C5;
+}
+
+.privacy {
+    margin-top: -20px;
+}
+
+.policy {
+    width: 208px;
+    margin-left: -150px;
+    gap: 30px;
+}
+
+.policy span {
+    color: #C5C5C5;
+    margin-left: 20px;
+}
+
+/*@media screen and (max-width: 1305px) {*/
+/*    .wrapper {*/
+/*        width: 90%; !* Используем относительную ширину или другое значение по вашему усмотрению *!*/
+/*        max-width: 1305px; !* Максимальная ширина *!*/
+/*    }*/
+
+/*    .transform-wrapper {*/
+/*        width: 100%;*/
+/*        max-width: 1305px;*/
+/*    }*/
+
+/*    .transform {*/
+
+/*        width: 100%;*/
+/*        max-width: 1305px;*/
+/*    }*/
+
+/*    .reverse {*/
+/*        width: 100%;*/
+/*        max-width: 1305px;*/
+/*    }*/
+
+/*    .reviews_inner {*/
+/*        width: 100%;*/
+/*        !*max-width: 1305px;*!*/
+/*    }*/
+
+/*    .services {*/
+/*        gap: 100px;*/
+/*    }*/
+
+/*    !*.reviews-about__us {*!*/
+/*    !*    width: 90%; !* Уменьшаем ширину контейнера *!*!*/
+/*    !*    height: auto; !* Позволяет контейнеру изменять высоту в зависимости от содержимого *!*!*/
+/*    !*    flex-wrap: wrap; !* Переносим элементы на новую строку при необходимости *!*!*/
+/*    !*    justify-content: flex-start;*!*/
+
+/*    !*}*!*/
+/*}*/
