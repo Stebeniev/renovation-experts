@@ -1,1 +1,1 @@
-https://Stebeniev.github.io/Renovation-Experts/
+https://Stebeniev.github.io/renovation-experts/
