@@ -22,35 +22,75 @@ function toggleText(id) {
     }
   });
 }
+/*----------------------------------------------------------------------------------------------------*/
 
 
 function animateValue(id, start, end, duration) {
-  const obj = document.getElementById(id)
-  const span = obj.querySelector('span')
-  const range = end - start
-  let current = start
-  const increment = end > start ? 1 : -1
-  const stepTime = Math.abs(Math.floor(duration / range))
+  const obj = document.getElementById(id);
+  const span = obj.querySelector('span');
+  const range = end - start;
+  let current = start;
+  const increment = end > start ? 1 : -1;
+  const stepTime = Math.abs(Math.floor(duration / range));
   const timer = setInterval(function () {
-    current += increment
+    current += increment;
     if (id === "projectsCounter") {
-      span.innerHTML = current + "+"
+      span.innerHTML = current + "+";
     } else {
-      span.innerHTML = current
+      span.innerHTML = current;
     }
     if (current == end) {
-      clearInterval(timer)
+      clearInterval(timer);
     }
-  }, stepTime)
+  }, stepTime);
 
   span.style.color = "#F68C00";
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-  animateValue("projectsCounter", 0, 300, 2000);
-  animateValue("yearsCounter", 0, 12, 2000);
-  animateValue("areaCounter", 0, 34, 2000);
+// document.addEventListener("DOMContentLoaded", function() {
+//   animateValue("projectsCounter", 0, 300, 2000);
+//   animateValue("yearsCounter", 0, 12, 2000);
+//   animateValue("areaCounter", 0, 34, 2000);
+// });
+
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.1
+};
+
+const observer = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const id = entry.target.id;
+      let start = 0;
+      let end = 0;
+      switch (id) {
+        case "projectsCounter":
+          end = 300;
+          break;
+        case "yearsCounter":
+          end = 12;
+          break;
+        case "areaCounter":
+          end = 34;
+          break;
+        default:
+          break;
+      }
+      animateValue(id, start, end, 2000);
+      // observer.unobserve(entry.target);
+    }
+  });
+}, options);
+
+document.querySelectorAll('.total').forEach(counter => {
+  observer.observe(counter);
 });
+
+
+/*----------------------------------------------------------------------------------------------------*/
+
 
 
 function clearValue(input) {
@@ -76,6 +116,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+/*----------------------------------------------------------------------------------------------------*/
+
 
 
 function toggleArrow(arrow) {
@@ -87,6 +129,8 @@ function toggleArrow(arrow) {
     arrow.previousElementSibling.style.width = '652px';
   }
 }
+/*----------------------------------------------------------------------------------------------------*/
+
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -108,6 +152,9 @@ document.addEventListener('DOMContentLoaded', function() {
     link.addEventListener('click', handleLinkClick);
   });
 });
+/*----------------------------------------------------------------------------------------------------*/
+
+
 
 const readMoreButtons = document.querySelectorAll('.read-more');
 const hiddenTexts = document.querySelectorAll('.hidden-text');
@@ -123,6 +170,8 @@ readMoreButtons.forEach((button, index) => {
     }
   });
 });
+/*----------------------------------------------------------------------------------------------------*/
+
 
 
 document.getElementById("myForm").addEventListener("submit", function(event) {
